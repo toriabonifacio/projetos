@@ -5,7 +5,7 @@ int main(){
     int tabuleiro[10][10] = {0}; //esta variável indica o tamanho do tabuleiro e  também vai preencher o tabuleiro com o número 0 representando a água.
 
      for (int i = 0; i < 3; i++) {      
-        for (int j = 0; j < 10; j++) {           //impressão do cone 
+        for (int j = 0; j < 10; j++) {           //impressão do cone usando o número 1 para representar o mesmo.
             if (j >= 4 - i && j <= 4 + i) {
                 tabuleiro[i][j] = 1;
             }
@@ -14,7 +14,7 @@ int main(){
 
       
     for (int i = 7; i < 10; i++) {          
-        for (int j = 7; j < 10; j++) {      //impressão da cruz
+        for (int j = 7; j < 10; j++) {      //impressão da cruz usando o 2 para fazer a representação.
             if (i == 8 || j == 8) {    
                 tabuleiro[i][j] = 2;
             }
@@ -23,7 +23,7 @@ int main(){
 
     for (int i = 3; i < 6; i++){
         for (int j = 2; j < 7; j++){
-            if ((i == 3 && j == 4) || (i == 4) || (i == 5 && j == 4)){    //impressão do octaedro.
+            if ((i == 3 && j == 4) || (i == 4) || (i == 5 && j == 4)){    //impressão do octaedro usando o 3 para representar.
                 tabuleiro[i][j] = 3;
             }
         }
